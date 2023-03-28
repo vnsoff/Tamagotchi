@@ -1,3 +1,3 @@
   <div align=center>
-  <p> Tamagotchi-style game </p>
+  <p> I'm currently developing a Tamagotchi-style game on Unity3D with C# </p>
   </div>
