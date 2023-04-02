@@ -5,21 +5,72 @@ m_ProjectFiles:
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638146472267477606
-    m_Hash: 728776223
+      ticks: 638160626672698045
+    m_Hash: 2579487231
   m_LockFileStatus:
     m_FilePath: D:/Users/Vanessa/Desktop/Vanessa/Projects/Tamagotchi/Tamagotchi/Packages/packages-lock.json
     m_PathExists: 1
     m_ContentTrackingEnabled: 1
     m_ModificationDate:
       serializedVersion: 2
-      ticks: 638146472664427975
-    m_Hash: 2249468046
+      ticks: 638160626673230008
+    m_Hash: 155030858
 m_EmbeddedPackageManifests:
   m_ManifestsStatus: {}
 m_PackageAssets:
   m_Packages:
     m_ResolvedPackages:
+    - packageId: com.unity.2d.sprite@1.0.0
+      testable: 0
+      isDirectDependency: 1
+      version: 1.0.0
+      source: 2
+      resolvedPath: D:\Users\Vanessa\Desktop\Vanessa\Projects\Tamagotchi\Tamagotchi\Library\PackageCache\com.unity.2d.sprite@1.0.0
+      assetPath: Packages/com.unity.2d.sprite
+      name: com.unity.2d.sprite
+      displayName: 2D Sprite
+      author:
+        name: 
+        email: 
+        url: 
+      category: 2D
+      type: 
+      description: Use Unity Sprite Editor Window to create and edit Sprite asset
+        properties like pivot, borders and Physics shape
+      status: 4
+      errors: []
+      versions:
+        all:
+        - 1.0.0
+        compatible:
+        - 1.0.0
+        verified: 1.0.0
+      dependencies: []
+      resolvedDependencies: []
+      keywords:
+      - 2d
+      - sprite
+      - sprite editor window
+      registry:
+        id: 
+        name: 
+        url: 
+        scopes: []
+        isDefault: 0
+        capabilities: 0
+      hasRegistry: 0
+      hideInEditor: 1
+      entitlements:
+        isAllowed: 1
+      isAssetStorePackage: 0
+      datePublishedTicks: 0
+      documentationUrl: 
+      hasRepository: 0
+      repository:
+        type: 
+        url: 
+        revision: 
+        path: 
     - packageId: com.unity.collab-proxy@1.15.13
       testable: 0
       isDirectDependency: 1
@@ -104,6 +155,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -127,6 +179,7 @@ m_PackageAssets:
         - 2.0.0-preview.22
         - 2.0.0
         - 2.0.1
+        - 2.0.3
         - 2.1.0-preview.3
         - 2.1.0-preview.5
         - 2.1.0-preview.6
@@ -526,6 +579,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
@@ -537,6 +591,7 @@ m_PackageAssets:
         - 1.3.1
         - 1.3.2
         - 1.3.3
+        - 1.3.4
         - 2.0.1-exp.1
         - 2.0.1-exp.2
         - 2.0.1-pre.12
