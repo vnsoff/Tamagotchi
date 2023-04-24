@@ -6,66 +6,64 @@ using UnityEngine.UI;
 public class GameManager : MonoBehaviour
 {
     //Serialized fields to use for game data
-    [SerializeField]  public float Food; // The float variable to decrease Food
-    [SerializeField]  public float Sleep; // The float variable to decrease Sleep
-    [SerializeField]  public float Health; // The float variable to decrease Health
-    [SerializeField]  public float Happiness; // The float variable to decrease Happiness
-    [SerializeField]  public float decreaseRate; // The rate to decrease the variable
-    [SerializeField] public Image bar1; // Bar
-    [SerializeField] public Image bar2; // Bar
-    [SerializeField] public Image bar3; // Bar
-    [SerializeField] public Image bar4; // Bar
-
+    [SerializeField]  public float Food, Sleep, Health, Happiness, decreaseRate; // The status variables to decrease and the decrease rate
+    [SerializeField] public Image bar1, bar2, bar3, bar4; // Status Bar to fill
     void Awake()
     {
-        Food = 100f;
-        Sleep = 100f;
-        Health = 100f;
-        decreaseRate = 5f;
-        Debug.Log("First:" + Food);
-        Debug.Log("First:" + Sleep);
-        Debug.Log("First:" + Health);
-        Debug.Log("First:" + Happiness);
-
+        Food = 300f;
+        Sleep = 300f;
+        Health = 300f;
+        Happiness = 300f;
+        decreaseRate = 1f;
     }
     void Start()
     {
-        StartCoroutine(DecreaseLoop());
-    }
-    private void Update()
-    {
-        Debug.Log(Food);
-        Debug.Log(Sleep);
-        Debug.Log(Health);
-        Debug.Log(Happiness);
+        StartCoroutine(DecreaseLoopFood());
+        StartCoroutine(DecreaseLoopSleep());
+        StartCoroutine(DecreaseLoopHealth());
+        StartCoroutine(DecreaseLoopHappiness());
+
     }
     //Coroutine loop that decreases food, sleep and health over time until it reaches 0f
-    IEnumerator DecreaseLoop()
+    IEnumerator DecreaseLoopFood()
     {
         while (Food > 0f)
         { // Only decrease if variable is above 0
             Food -= decreaseRate;
-            bar1.fillAmount = Food / 100f;
+            bar1.fillAmount = Food / 300f;
             yield return new WaitForSeconds(1f);
         }
+    }
+    IEnumerator DecreaseLoopSleep()
+    {
+
         while (Sleep > 0f)
         { // Only decrease if variable is above 0
             Sleep -= decreaseRate;
-            bar2.fillAmount = Sleep / 100f;
+            bar2.fillAmount = Sleep / 300f;
             yield return new WaitForSeconds(1f);
         }
+    }
+    IEnumerator DecreaseLoopHealth()
+    {
+
         while (Health > 0f)
         { // Only decrease if variable is above 0
             Health -= decreaseRate;
-            bar3.fillAmount = Health / 100f;
+            bar3.fillAmount = Health / 300f;
             yield return new WaitForSeconds(1f);
         }
+    }
+    IEnumerator DecreaseLoopHappiness()
+    {
+
         while (Happiness > 0f)
         { // Only decrease if variable is above 0
             Happiness -= decreaseRate;
-            bar4.fillAmount = Happiness / 100f;
+            bar4.fillAmount = Happiness / 300f;
             yield return new WaitForSeconds(1f);
         }
+    
     }
 
     //Function that increases food to test the coroutine behavior
